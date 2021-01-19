@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  let count = 0
+
+  if(count >= 2){
+    return (
+      <div className="App">
+  
+      </div>
+    );
+
+  }
+  else{
+    return(
+      <div>
+        <h1>Il n'y a pas d'articles</h1>
+      </div>
+    )
+  }
 }
 
 export default App;
